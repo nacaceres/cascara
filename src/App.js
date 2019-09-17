@@ -31,7 +31,7 @@ class App extends React.Component {
   render(){
     return(
       <div>
-        <h1>Herramienta para aplicar navio a datos abiertos</h1>
+        <h1>Herramienta para aplicar navio a JSONs de datos abiertos</h1>
         <input
           type="text"
           value={this.state.datos}
