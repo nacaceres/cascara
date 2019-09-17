@@ -31,13 +31,14 @@ class App extends React.Component {
   render(){
     return(
       <div>
-        <h1>Herramienta de datos abiertos</h1>
+        <h1>Herramienta para aplicar navio a datos abiertos</h1>
         <input
           type="text"
           value={this.state.datos}
           placeholder="Insert Link"
           onChange={this.handleChange.bind(this)}
           ref={this.link}
+          size="50"
         />
         <button className="btn btn-primary" onClick={this.received}>
               Actualizar
