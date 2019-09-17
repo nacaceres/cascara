@@ -1,52 +1,52 @@
 import React from "react";
-import navio from "navio";
-
-class Viz extends React.Component {
-  setUp(){
-    let nv = new navio(this.,600);
-    nv.data(this.props.datos);
-    return nv;
-  }
-  componentDidMount(){
-    fetch("https://www.datos.gov.co/resource/fgp3-4nha.json")
-      .then(res => res.json())
-      .then(data => this.setState({
-        datos: data
-      }));
-  }
-  render(){
-    return(
-      <div ref={myIn => this.myIn=myIn}>
-      </div>
-    );
-  }
-
-}
+import Viz from "./NavioComp.js";
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      datos : []
+      datos : "https://www.datos.gov.co/resource/fgp3-4nha.json",
+      navios: []
     };
+    this.link = React.createRef();
+    this.received = this.received.bind(this);
   }
 
-  componentDidMount(){
-    fetch("https://www.datos.gov.co/resource/fgp3-4nha.json")
-      .then(res => res.json())
-      .then(data => this.setState({
-        datos: data
-      }));
+  handleChange(link) {
+    this.setState({ datos: link.target.value });
+  }
+  received()
+  {
+    let actual = this.state.navios;
+    actual.push(this.state.datos);
+    this.setState({
+      navios: actual
+    });
   }
 
+  renderNavios(){
+    return this.state.navios.map ( link => <Viz datos={link} actualizar={this.state.actualizar}/>);
+  }
 
   render(){
     return(
-        <h1>parcial</h1>
+      <div>
+        <h1>Herramienta de datos abiertos</h1>
         <input
           type="text"
+          value={this.state.datos}
+          placeholder="Insert Link"
+          onChange={this.handleChange.bind(this)}
+          ref={this.link}
         />
-        <Viz datos = {this.state.datos}/>
+        <button className="btn btn-primary" onClick={this.received}>
+              Actualizar
+        </button>
+        <br></br>
+        <br></br>
+        <br></br>
+        {this.renderNavios()}
+      </div>
     );
   }
 }
