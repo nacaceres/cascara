@@ -1,37 +1,46 @@
-import React from "react"
-import Tweet from "./tweet.js"
+import React from "react";
+import navio from "navio";
+
+class Viz extends React.Component {
+  setUp(){
+    let nv = new navio(this.props.referencia,600);
+    nv.data(this.props.datos);
+    return nv;
+  }
+  render(){
+    return(
+      <div>
+        {this.setUp()}
+      </div>
+    );
+  }
+
+}
+
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      tweets: []
-    }
+      datos : undefined
+    };
   }
 
   componentDidMount(){
-    fetch("/data")
+    fetch("https://www.datos.gov.co/resource/fgp3-4nha.json")
       .then(res => res.json())
-      .then(tweets => this.setState({
-        tweets: tweets
+      .then(data => this.setState({
+        datos: data
       }));
   }
 
-  renderTweets () {
-    return this.state.tweets.map ( t => <Tweet tweet={t}></Tweet>)
-  };
   render(){
-  return(
-  <div className = "row">
-     <div className="col-8">
-      <h2>Tweets</h2>
-      {this.renderTweets()}
-    </div>
-    <div className="col-4">
-      <h2>Controls</h2>
-    </div>
-  </div>
-);
-}
+    return(
+      <div>
+        <h1>parcial</h1>
+        <Viz referencia={myIn => this.myIn=myIn} datos={this.state.datos}/>
+      </div>
+    );
+  }
 }
 
 export default App;
