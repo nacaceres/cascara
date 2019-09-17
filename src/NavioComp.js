@@ -22,7 +22,9 @@ class Viz extends React.Component {
   }
   render(){
     return(
-      <div ref={myIn => this.myIn=myIn}>
+      <div>
+        <h3> Fuente: {this.props.datos}</h3>
+        <div ref={myIn => this.myIn=myIn}/>
       </div>
     );
   }

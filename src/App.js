@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   renderNavios(){
-    return this.state.navios.map ( link => <Viz datos={link} actualizar={this.state.actualizar}/>);
+    return this.state.navios.map ( link => <Viz datos={link} actualizar={this.state.actualizar}/> );
   }
 
   render(){
