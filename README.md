@@ -1,7 +1,7 @@
 ## Navio Tool
 ### Objetivo:
 Esta es una herramienta que nos permite ingresar una URL de un API que traiga un JSON y como resultado da una visualizacion de la herramienta Navio sobre todos los datos proporcionados por el API.
-![Screenshot Pag Web](https://raw.githubusercontent.com/nacaceres/navioTool/master/Captura%20de%20Pantalla%202019-09-17%20a%20la(s)%207.02.15%20p.%20m..png)
+![Screenshot Pag Web](https://raw.githubusercontent.com/nacaceres/navioTool/master/demo.png)
 ### Tecnologias
 Este proyecto usa react, yarn, eslint y navio.
 ### Despliegue Local  
