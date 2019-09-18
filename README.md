@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Navio Tool
+### Objetivo:
+Esta es una herramienta que nos permite ingresar una URL de un API que traiga un JSON y como resultado da una visualizacion de la herramienta Navio sobre todos los datos proporcionados por el API.
+![Screenshot Pag Web](https://raw.githubusercontent.com/nacaceres/navioTool/master/Captura%20de%20Pantalla%202019-09-17%20a%20la(s)%207.02.15%20p.%20m..png)
+### Tecnologias
+Este proyecto usa react, yarn, eslint y navio.
+### Despliegue Local  
+Para poder hacer el despliegue de la aplicación se debe realizar:
+#### Requisitos 
+- [**Yarn**](https://yarnpkg.com/lang/es-es/docs/cli/install/)
+#### Pasos
+Clonar el proyecto y ejecutar los comandos:
 
-## Available Scripts
+#### `cd navioTool`
 
-In the project directory, you can run:
+#### `yarn install`
 
-### `npm start`
+#### `yarn start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Abrir un explorador en: http://localhost:3000/
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Despliegue
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pueden encontrar la herramienta desplegada dando click a: https://lit-lowlands-03145.herokuapp.com/
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### ¿Como usar la herramienta?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1) Obtener un link a un API que retorne un JSON. EJ: https://www.datos.gov.co/resource/a9w6-54gk.json
 
-### Analyzing the Bundle Size
+2) Ingresela en el input de la herramienta.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+3) De click en agregar.
 
-### Making a Progressive Web App
+4) Disfrutar la visualizacion de la aplicación.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Autores
+[Nicolás Cáceres Acosta](https://github.com/nacaceres)
 
-### Advanced Configuration
+### Mensaje para John
+John como componente creativo quiero presentar que se lleva el historial de las consultas a navio, es decir que por cada vez que le doy click a agregar se añade un titulo de donde vinieron los datos y el navio asociado a esos datos.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Me acojo a la entrega bajo las siguientes condiciones: "Entrega martes a las 8PM de hoy martes, lo mismo del examen, más el bono y desplegado"
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
