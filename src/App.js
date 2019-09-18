@@ -32,6 +32,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Herramienta para aplicar navio a JSONs de datos abiertos</h1>
+        <h6>Ingresa aca tu URL</h6>
         <input
           type="text"
           value={this.state.datos}
