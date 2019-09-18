@@ -23,8 +23,6 @@ Abrir un explorador en: http://localhost:3000/
 
 Pueden encontrar la herramienta desplegada dando click a: https://lit-lowlands-03145.herokuapp.com/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
 ### ¿Como usar la herramienta?
 
 1) Obtener un link a un API que retorne un JSON. EJ: https://www.datos.gov.co/resource/a9w6-54gk.json
