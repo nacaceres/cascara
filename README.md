@@ -41,4 +41,5 @@ John como componente creativo quiero presentar que se lleva el historial de las 
 
 Me acojo a la entrega bajo las siguientes condiciones: "Entrega martes a las 8PM de hoy martes, lo mismo del examen, más el bono y desplegado"
 
-
+### Licencia
+El autor del proyecto navioTool es [Nicolás Alberto Cáceres Acosta](https://github.com/nacaceres) y la licencia de este proyecto es licencia MIT. (http://opensource.org/licenses/MIT) 
