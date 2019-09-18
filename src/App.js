@@ -41,7 +41,7 @@ class App extends React.Component {
           size="50"
         />
         <button className="btn btn-primary" onClick={this.received}>
-              Actualizar
+              Agregar
         </button>
         <br></br>
         <br></br>
